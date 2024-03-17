@@ -5,67 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/styles.css">
+    
 </head>
 
-<div class="container-fluid">
-    <navbar class="nav col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-        <div class="col-4 col-xs-4 col-md-4 col-lg-4 nav-brand">
-            <img src="/images/logo.png " class="img-fluid logo">
-        </div>
-        <div class="nav-items">
-            <ul>
-                <li class=""></li>
-            </ul>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#details" aria-expanded="false" aria-controls="details">Toggle</button>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                Button with data-bs-target
-              </button>
-            <span>Request Quote</span>
-
-        </div>
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-            </div>
-          </div>
-        <div class="collapse" id="details">
-            <div class="body-details">
-                <p>fyarfygjbbbbbbbbbbbbbb</p>
-
-            </div>
-
-        </div>
-    </navbar>
+<%- include('header.ejs') %>
     <body>
-        <main>
+        <main class="">
             <h3>Website Development <br>
             We <span>Rocket Man</span>!</h3>
+                <section>
+                    <div class="first-div col-0 col-xs-0 col-md-3 col-lg-3 colxl">
+                        <hr>
+        
+                    </div>
+                    <div class="second-div col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <article>
+                            <i></i>
+                            <p>
+                                LaunchUX is a nationally awarded website design and <br>
+                                SEO firm that specializes in driving new revenue to <br>
+                                your business.
+                            </p>
+                            <button>Blast Off!</button>
+                          
+                
+                        </article>
+
+                </section>
+            
         </main>
-        <article>
-            <i></i>
-            <p>
-                LaunchUX is a nationally awarded website design and <br>
-                SEO firm that specializes in driving new revenue to <br>
-                your business.
-            </p>
-            <button>Blast Off!</button>
-          
-
-        </article>
-        <section>
-            <h4>Want your website to rank higher?</h4>
-            <button>Request SEO Report <span></span></button>
+        <section class="col-12">
+            
+                <section>
+                    <h4>Want your website to rank higher?</h4>
+                    <button>Request SEO Report <span></span></button>
+                </section>
+                <section>
+                        <h3>Website Services</h3>
+                        <div class="services col-12 col-xs-12 col-sm-12">
+                            <div class="service-lists">
+                                <a href="">Web Design</a>
+                                <a href="">SEO</a>
+                                <a href="">Social Media</a>
+                                <a href="">Integrations</a>
+                                <a href="">Web Hosting</a>
+                                <a href="">Web App Development</a>
+                            </div>
+                            <div class="service-details col-12 col-xs-12 col-sm-12">
+                                <h3>Website Design</h3>
+                                <h4>Make Your Business Stand Out Online</h4>
+                                <h5>Attract more visitors</h5>
+                                <p>More traffic + conversions = growth. Maths.</p>
+                                <h5>Stay relevant online</h5>
+                                <p>The internet is always changing - don't get lost in the void.</p>
+                                <h5>Improve your brand</h5>
+                                <p>Customers gravitate towards what's sleek, memorable, and appealing.</p>
+                            </div>
+                            <button>Learn More</button>
+                        </div>
+                </section>
+                <section class="col-12">
+                    <div class="image col-6 col-xs-6 col-sm-6 col-md-">
+                        <img src="/images/jones-road-tree-service.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="image">
+                        <img src="/images/mount-holly-springs.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="image">
+                        <img src="/images/wade-architecture.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="image">
+                        <img src="/images/jm-boswells.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="image">
+                        <img src="/images/central-state-door-servicepng" alt="" class="img-fluid">
+                    </div>
+                    <div class="image">
+                        <img src="/images/spicher-and-company.png" alt="" class="img-fluid">
+                    </div>
+                    
+                </section>
+            </div>
         </section>
-        <section>
-                <h3>Website Services</h3>
-                <div class="services">
-
-                </div>
-                
-                
-
-        </section>
+        
         
     </body>
 </div>
