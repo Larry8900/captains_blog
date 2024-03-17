@@ -9,7 +9,7 @@ app.get('/', (req,res)=>{
     res.render("index.ejs")
 })
 
-
+app.use(express.static('public'));
 
 
 app.listen(port, (req,res)=>{
