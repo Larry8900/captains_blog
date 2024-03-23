@@ -1,6 +1,59 @@
 header{
-    background-image: url(../images/space-zoom.jpg);
+    background-image: url(../images/space.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+   
+    
+    background-size: cover;
+    margin-top: 19%;
+    padding: 20% 5%;
+    font-size: 32px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+ 
+}
+header h2{
+    font-size: 4rem;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    font-weight: 600;
+    padding: 30% auto;
+    z-index: 2;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.gradient{
+    background: linear-gradient(
+    220deg,
+    #FF2525,
+    #FFFB7D,
+    #dd8615
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+header p{
+    display: inline-flex;
+    gap: 5px;
+    color: #dd8615;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.contact-us{
+    color: white;
+    font-weight: 700;
+}
+.fa-greater-than{
+    color: white;
+}
+
+.fa-house-chimney{
+
 }

@@ -5,12 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
     <link rel="stylesheet" href="/styles/contact.css">
+    <script src="https://kit.fontawesome.com/1be2aef06e.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     
 <%- include('header.ejs') %>
 <header>
     <h2>Get in <span class="gradient">Touch</span></h2>
+    <p><i class="fa-solid fa-house-chimney"></i>Home <span class="contact-us"> <i class="fa-solid fa-greater-than"></i> Contact Us</span></p>
+    
 </header>
+<h3>Let's Start the Conversation</h3>
+<p>"<span>*</span> indicates required fields</p>
+<form action="">
+    <label for="">I would like to: <span>*</span>
+        <input type="text">
+    </label>
+    <label for="FirstName">First Name <span></span>
+        <input type="text">
+    </label>
+    <label for="lastName">
+        <input type="text">
+    </label>
+    <label for="website URL">
+        <input type="text">
+    </label>
+    <label for="Email">
+        <input type="text">
+    </label>
+    <label for="Phone">
+        <input type="text">
+    </label>
+    <label for="Company or Organization">
+        <input type="text">
+    </label>
+   
+</form>
+<p>Only leave blank if not associated with a business</p>
+<h3>How can we help you? (choose multiple) <span></span></h3>
+
+<form action="">
+    <label for="online-leads">
+        <input type="checkbox" name="" id=""> Get more online leads
+    </label>
+    <label for="improve-website">
+        <input type="checkbox" name="" id=""> Build or improve my website
+    </label>
+    <label for="online-presence">
+        <input type="checkbox" name="" id=""> Increase my online presence
+    </label>
+    <label for="host">
+        <input type="checkbox" name="" id="">Host my site
+    </label>
+    <label for="protect">
+        <input type="checkbox"> Protect my website and business information
+    </label>
+</form>
+<span></span>
+<button type="submit"></button>
+
 </body>
 </html>
