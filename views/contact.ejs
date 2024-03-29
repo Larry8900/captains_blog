@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
     <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="stylesheet" href="/styles/styles.css">
     <script src="https://kit.fontawesome.com/1be2aef06e.js" crossorigin="anonymous"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   
@@ -14,16 +15,16 @@
 <%- include('header.ejs') %>
 <header>
     <h2>Get in <span class="gradient">Touch</span></h2>
-    <p><i class="fa-solid fa-house-chimney"></i>Home <span class="contact-us"> <i class="fa-solid fa-greater-than"></i> Contact Us</span></p>
+    <p><i class="fa-solid fa-house-chimney"></i>Home <span class="contact-us"> <i class="fa-solid fa-greater-than fa-sm"></i> Contact Us</span></p>
     
 </header>
 
 <main>
     <h3>Let's Start the Conversation</h3>
-    <p>"<span>*</span> indicates required fields</p>
+    <p>"<span class="required">*</span>" indicates required fields</p>
 
     <form action="">
-        <label for="">I would like to: <span>*</span>
+        <label for="">I would like to: <span class="required">*</span>
             <select name="options" id="">
                 <option value="Hire LaunchUX" selected>Hire LaunchUX</option>
                 <option value="Request Support">Request Support</option>
@@ -32,19 +33,19 @@
                 <option value="Partner with LaunchUX">Partner with LaunchUX</option>
             </select>
         </label>
-        <label for="FirstName">First Name <span></span>
+        <label for="FirstName">First Name <span class="required">*</span>
             <input type="text">
         </label>
-        <label for="lastName"> lastName
+        <label for="lastName"> lastName <span class="required">*</span>
             <input type="text">
         </label>
-        <label for="website URL"> Website URL
+        <label for="website URL"> Website URL <span class="required">*</span>
             <input type="text">
         </label>
-        <label for="Email">Email
+        <label for="Email">Email <span class="required">*</span>
             <input type="text">
         </label>
-        <label for="Phone">Phone
+        <label for="Phone">Phone <span class="required">*</span>
             <input type="number">
         </label>
         <label for="Company or Organization"> Company or Organization
@@ -53,7 +54,7 @@
     
     </form>
     <div class="instruction">Only leave blank if not associated with a business</div>
-            <h4>How can we help you? (choose multiple) <span></span></h4>
+            <h4>How can we help you? (choose multiple) <span class="required">*</span></h4>
 
     <form action="" method="post">
         <label for="online-leads">
@@ -76,14 +77,50 @@
         </label>
         <div class="g-recaptcha" data-sitekey="your_site_key"></div>
       <br/>
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit" class="submit">
     </form>
-
-    <h3>The Best in Web & SEO </h3>
-    <p><span>Call Us</span> (855) 352-8634</p>
+    <article class="contact-number-div">
+        <h3>The Best in Web & SEO </h3>
+        <p><span class="gradient">Call Us</span> (855) 352-8634</p>
+    </article>
+    
     <div class="space">
-        <img src="/images/sspacd.png" alt="" class="img-fluid">
+        <div class="image-div">
+                
+        <img src="/images/sspacd.png" alt="" class="img-fluid" class="spaceman-img">
+        </div>
+        <div class="contact-links">
+            <i class="fa-brands fa-instagram fa-xl"></i>
+            <i class="fa-brands fa-facebook fa-xl"></i>
+            <i class="fa-brands fa-linkedin fa-xl"></i>
+            <i class="fa-brands fa-airbnb fa-xl"></i>
+
+
+        </div>
     </div>
+  
+    
+    <div class="badge-div">
+        <img src="images/upcity-badge.png" alt="" class="img-fluid">
+        <img src="/images/clutch-badge.png" alt="" class="img-fluid">
+    </div>
+
+    <button class="request-quote">Request Quote</button>
+    <footer>
+        <img src="/images/logo.png" class="img-fluid" alt="">
+        <h4>(855) 352-8624</h4>
+        <h5>Headquatered in Chambersburg, PA</h5>
+        <p>2024</p>
+
+        <ul>
+            <li><a href="/">LaunchUX</a></li>
+            <li><a href="http://">Careers</a></li>
+            <li><a href="http://">Locations</a></li>
+            <li><a href="http://">industries</a></li>
+            <li><a href="http://">of Service</a></li>
+        </ul>
+    </footer>
+      
   
 
 </main>
