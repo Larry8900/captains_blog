@@ -1,6 +1,7 @@
 import express from 'express'
 import ejs from 'ejs'
 
+
 const port = 4000
 
 const app = express()
@@ -18,3 +19,6 @@ app.use(express.static('public'));
 app.listen(port, (req,res)=>{
     console.log(`server is running on port ${port}`)
 })
+
+// manipulating  Website services section
+
