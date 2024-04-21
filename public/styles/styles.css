@@ -17,6 +17,7 @@
     background-color: black;
     padding: 20px;
     position: fixed;
+    z-index: 3;
 
    
 }
@@ -27,15 +28,19 @@
     z-index: 3;
 }
 
-.main_separated{
+main{
     color: white;
     background-image: url(../images/space.gif);
  background-repeat: no-repeat;
  background-position: center;
  background-size: cover;
+ margin-top: -15%;
+ 
 }
+
 .second-div{
-    padding:30% 5%;
+    padding:30% 0%;
+    margin: 0%;
 }
 
 .first-div{
@@ -75,6 +80,7 @@ article p{
     color: white;
     text-align: left;
     text-wrap: wrap;
+    width: 100%;
     margin: 15% auto;
     box-sizing: border-box;
     max-width: 850px;
@@ -101,11 +107,15 @@ article p{
 
 .question_button{
     position: fixed;
-    top: 70%;
+    display: inline-flex;
+    flex-direction: row;
+    gap: -4px;
+    top: 80%;
     left: 70%;
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     z-index: 3;
+    cursor:pointer;
 }
 .question{
     width: 100%;
@@ -161,10 +171,7 @@ i{
     text-size-adjust: 100%;
 }
 
-.services{
-   
 
-}
 .service-lists{
     display: flex;
     flex-wrap:wrap;
@@ -277,7 +284,7 @@ i{
 .case-study{
     width: 100%;
     padding: 10%;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .case-cover{
     height: 30px;
@@ -287,12 +294,16 @@ i{
     background-color: blue;
 
 }
+.case-image{
+}
 .case-image.case-image img{
-width: 60px;
-height: 60px;
+width: 70px;
+height: 70px;
 border-radius: 20px;
-top: 65%;
-position: absolute;
+top: 285px;
+left: 20%;
+position: relative;
+z-index:inherit;
 }
 
 .case-study img:nth-child(2){
@@ -300,8 +311,25 @@ position: absolute;
    height: 100%;
    border-radius: 20px;
 }
+.mesage{
+    margin-top: 20%;
+    text-align: center;
+}
+.mesage h4{
+    font-size: 52px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-size-adjust: 100%;
+    padding: 2% 10% ;
+    
+}
 .section4 i{
     color: white;margin-right: 10px;
+}
+.tenor-gif-embed{
+    margin-top: 20%;
 }
 @media (min-width:550px) {
     .main_separated{
@@ -318,9 +346,17 @@ position: absolute;
     }
     article h1{
         font-size: 48px;
-        box-sizing: border-box
-        line-height 57.6px;
-        width: 65%;
+        width: 60%;
+        box-sizing: border-box;
+        line-height: 57.6px;
+        padding: 0;
+        margin-top:-3%;
+        margin-bottom: -10%;
+    }
+    article p{
+        width: 60%;
+        margin-left: 0;
+        margin-bottom: 5%;
     }
     .second-div{
         padding:20% 5% 20% 5%;
